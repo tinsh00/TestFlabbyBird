@@ -104,6 +104,7 @@ public class GameManager : Singleton<GameManager>
 		}
 		walls wall = Instantiate(wallPref, wallContainer);
 		wall.InitData(new Vector3(x, y, 0), currGameLevel);
+		poolWall.Add(wall);
 	}
 
 	private void Update()
